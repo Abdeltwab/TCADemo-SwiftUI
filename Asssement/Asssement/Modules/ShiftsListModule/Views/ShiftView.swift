@@ -56,17 +56,3 @@ extension ShiftView {
         }
     }
 }
-
-/*
-struct JobItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        ShiftView(store:
-            .init(initialState:
-                    .init(shift: Shift(from: Decode)),
-                reducer: ShiftViewCore.reducer,
-                environment: .init()))
-            .previewLayout(.sizeThatFits)
-    }
-}
-
- */

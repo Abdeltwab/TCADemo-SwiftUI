@@ -11,12 +11,6 @@ import ComposableArchitecture
 struct ContentView: View {
     let store: Store<AppState, AppAction>
     var body: some View {
-//        JobListView(
-//            store: self.store.scope(
-//                state: { $0.jobList} ,
-//                action: { .jobList($0) }
-//            )
-//        )
         
         ShiftsListView(
             store: self.store.scope(

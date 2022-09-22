@@ -16,21 +16,8 @@ struct ShiftsListView: View {
         self.store = store
         viewStore = ViewStore(self.store)
     }
-    @State private var isShowingDetailView = false
 
     var body: some View {
-//        NavigationView {
-//            VStack {
-//                NavigationLink(destination: Text("Second View"),
-//                               isActive: $isShowingDetailView) { EmptyView() }
-//                Button("Tap to show detail") {
-//                    self.isShowingDetailView = true
-//                }
-//            }
-//            .navigationTitle("Navigation")
-//        }
-
-        
        NavigationView {
 
            VStack(alignment: .leading) {
@@ -93,22 +80,3 @@ struct ShiftsListView: View {
         
     }
 }
-
-/*
- struct ShiftsListViewCoreView_Previews: PreviewProvider {
-     static var previews: some View {
-         ShiftsListViewCoreView(store:
-                 .init(
-                     initialState:
-                             .init(id: UUID(),
-                                   title: "Sunday 8 September",
-                                   jobs: .mock),
-                     reducer: ShiftsListViewCore.reducer,
-                     environment: .init(
-                         fetchShifts: AppEnvironment.live.fetchShifts,
-                         provider: .live,
-                         mainQueue: .main.eraseToAnyScheduler()))
-         )
-     }
- }
- */
