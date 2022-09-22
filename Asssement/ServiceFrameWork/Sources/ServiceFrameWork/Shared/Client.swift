@@ -21,11 +21,6 @@ extension HTTPClient {
         endpoint: Endpoint,
         responseModel: T.Type
     ) async throws -> T {
-        // 2022-11-19 -- 82 res
-        // 2022-09-19 -- 4 res
-        //https://temper.works/api/v3/shifts?filter%5Bdate%5D=2022-09-22
-        //https://temper.works/api/v3/shifts?filter%5Bdate%5D=2022-09-19
-        
         var request = URLRequest(url: endpoint.url)
         request.httpMethod = endpoint.method.rawValue
         let (data, _) = try await URLSession.shared.data(from: request)

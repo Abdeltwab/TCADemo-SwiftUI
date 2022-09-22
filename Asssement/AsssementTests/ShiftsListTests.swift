@@ -34,6 +34,7 @@ final class ShiftsListTests: XCTestCase {
         store.send(.onAppear)
         
 //        store.receive(.fetchShifts(dateString: Date().toYearMonthDayFormate))
+        //TODO: To complete 
 
     }
 
