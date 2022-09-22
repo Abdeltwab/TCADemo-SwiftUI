@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Asssement
+
+  Created by Abdeltawab Mohamed on 18/09/2022.
+  
+*/
+
+"login_title" = "Log in ";
+"signup_title" = "Sign up";
+"filters_title" = "Filters";
+"map_title" = "Kaart";
